@@ -1,11 +1,60 @@
----
-layout: default
-title: 文章目录
----
+<!DOCTYPE html>
+<html>
 
-<ul class="post-list">
-    {% for post in site.posts %}
-        <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
-        {{ post.date | date: "%F" }} <br>
-    {% endfor %}
-</ul>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="WindyNight&#39;s Blog : Chance favors only the prepared mind">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>WindyNight&#39;s Blog</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Windynightst/blog">View on GitHub</a>
+
+          <h1 id="project_title">WindyNight&#39;s Blog</h1>
+          <h2 id="project_tagline">Chance favors only the prepared mind</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Windynightst/blog/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Windynightst/blog/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="crowdrecruiter-selecting-participants-for-piggyback-crowdsensing--under-probabilistic-coverage-constraint" class="anchor" href="#crowdrecruiter-selecting-participants-for-piggyback-crowdsensing--under-probabilistic-coverage-constraint"><span class="octicon octicon-link"></span></a>CrowdRecruiter: Selecting Participants for Piggyback Crowdsensing  under Probabilistic Coverage Constraint</h1>
+
+<blockquote>
+<p><strong>Summary：</strong></p>
+</blockquote>
+
+<p>This paper proposes a novel participant selection framework, named CrowdRecruiter, for mobile crowdsensing. CrowdRecruiter operates on top of PCS and minimizes incentive payments by selecting a small number of participants while still satisfying probabilistic coverage constraint. The author used cell towers as the coverage metrics, that is, if the number of cell towers in a given region being covered is larger than a threshold, then we can say that the area is covered. </p>
+
+<p>To achieve the objective, the author created a two-phase algorithm. In the first phase, the algorithm predicts each user’s call/mobility habit using the call/mobility profile of each user. In the second phase, the algorithm selects participants iteratively by using the prediction result in first phase. In next phrase, the detail of this algorithm will be introduced.</p>
+
+<p>In the first phase, there are two steps, 1) mapping call/mobility traces and 2) predicting each user’s call/mobility. In the first step, it maps each user’s historical call/mobility traces onto N sensing cycles. Then it counts λu,i,t–the average number of calls placed by each user (u∈U) at each cell tower (t∈T) in each sensing cycle (0≤ i &lt;N). In next step, it estimates Pi,t(u)–the probability of the user (u∈U) placing at least one call at each cell tower (t∈T) during each sensing cycle (0≤i&lt;N). Assuming the call sequence follows an inhomogeneous Poisson process, the probability of a user u to place n phone calls at cell tower t(t∈T) in sensing cycle i(0≤i&lt;N) can be modeled as: </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">WindyNight&#39;s Blog maintained by <a href="https://github.com/Windynightst">Windynightst</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
